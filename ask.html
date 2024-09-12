@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <!-- Google Font for PressStart2P -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: grey;
+            font-family: Arial, sans-serif;
+            text-align: center; /* Center align everything */
+        }
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: orange;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+        form {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ask your question</h1>
+    <form action="/ask" method="POST">
+        <label for="query">Your question:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
